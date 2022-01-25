@@ -46,23 +46,21 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+      <section class="breadcrumbs">
+        <h1 class="breadcrumbs-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="">Каталог товаров</a>
           </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
-          </li>
+          <li class="breadcrumbs-item">Моноподы для селфи</li>
         </ul>
-      </header>
+      </section>
 
       <section class="catalog-filter">
-        <h2 class="visually-hidden">Фильтр:</h2>
+        <h2 class="catalog-filter-titel">Фильтр:</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/">
           <fieldset class="price-filter">
             <legend class="price-filter-title">Стоимость</legend>
@@ -100,18 +98,18 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Bluetooth</legend>
-              <ul class="bluetooth-list">
-                <li class="bluetooth-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="yes">Есть
-                  </label>
-                </li>
-                <li class="bluetooth-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="no">Нет
-                  </label>
-                </li>
-              </ul>
+            <ul class="bluetooth-list">
+              <li class="bluetooth-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="yes">Есть
+                </label>
+              </li>
+              <li class="bluetooth-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="no">Нет
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <button class="button" type="submit">Показать</button>
       </form>
@@ -124,6 +122,12 @@
           <option value="expensive">Дорогие</option>
           <option value="cheap">Дешевые</option>
         </select>
+        <button class="catalog-sort-item catalog-sort-ascending" type="button">
+          <span class="visually-hidden">Сортировка цены по возрастанию</span>
+        </button>
+        <button class="catalog-sort-item catalog-sort-descending" type="button">
+          <span class="visually-hidden">Сортировка цены по убыванию</span>
+        </button>
       <ul class="product-card-list">
         <li class="product-card-item">
           <a class="product-card-link">
@@ -137,7 +141,7 @@
           <a class="product-card-link">
             <img src="" alt="Профессиональная селфи-палка">
             <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-            <span class="product-card-price">500 р</span>
+            <span class="product-card-price">1 500 р</span>
           </a>
         </li>
 
@@ -145,7 +149,7 @@
           <a class="product-card-link">
             <img src="" alt="Непотопляемая селфи-палка">
             <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-            <span class="product-card-price">500 р</span>
+            <span class="product-card-price">2 500 р</span>
           </a>
         </li>
 
@@ -153,11 +157,11 @@
           <a class="product-card-link">
             <img src="" alt="Селфи-палка «Следуй за мной»">
             <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-            <span class="product-card-price">500 р</span>
+            <span class="product-card-price">1 500 р</span>
           </a>
         </li>
       </ul>
-      <button class="button button-show-more" type="button">Загрузить еще</button>
+      <button class="button button-show-more" type="button">Загрузить ещё</button>
       <ul class="pagination-list">
         <li class="pagination-item">
           <a class="pagination-link">Назад</a>
@@ -172,7 +176,10 @@
           <a class="pagination-link">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link">4</a>
+          <span class="pagination-item-ellipsis">...</span>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link">15</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link">Вперёд</a>
@@ -182,12 +189,12 @@
     </main>
 
     <footer class="page-footer">
-      <section class="footer-contacts">
+      <section class="page-footer-adress">
         <h2 class="visually-hidden">Адрес</h2>
-        <img class="footer-contacts-logo" alt="Логотип интернет-магазин Девайс" src="">
-        <adress class="footer-contacts-adress">
+        <img class="page-footer-logo" alt="Логотип интернет-магазин Девайс" src="">
+        <address class="contacts-adress">
           <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        </adress>
+        </address>
       </section>
 
       <section>
@@ -206,19 +213,22 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link facebook" href="https://www.facebook.com/htmlacademy/"></a>
+            <img class="footer-social-icon" src="" alt="Логотип фейсбук">
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link instagram" href="https://www.instagram.com/htmlacademy/"></a>
+            <img class="footer-social-icon" src="" alt="Логотип инстаграм">
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link twitter" href="https://twitter.com/htmlacademy_ru"></a>
+            <img class="footer-social-icon" src="" alt="Логотип твиттер">
           </li>
         </ul>
       </section>
 
-      <section class="footer-contacts">
+      <section class="page-footer-phone">
         <h2 class="visually-hidden">Телефон</h2>
-        <a class="footer-contacts-phone" href="tel:+7(812)812-12-12">Тел.: +7 (812) 812-12-12</a>
+        <a class="contacts-phone" href="tel:+7(812)812-12-12">Тел.: +7 (812) 812-12-12</a>
         <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="hmlacademy-logo" src="" alt="Логотип html academy">
         </a>
