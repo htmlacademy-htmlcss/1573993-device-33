@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: "normal";
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: "normal";
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.page-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.exit {
+  opacity: 0.3;
+}
+
+.main-inner {
+  background-color: #F0F0F0;
+}
+
+.search-button {
+  font-size: 16px;
+}
+
+
+.navigation-link {
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-user {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.navigation-page {
+  line-height: 21px;
+}
+
+.button,
+.slider-title,
+.more-info-link,
+.catalog-category-link,
+.advantages-link,
+.advantages-description-list h3,
+.rar-commodity-link span,
+.about-us-title,
+.contacts-title,
+.subscrition label,
+.footer-navigation-item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #000000;
+}
+
+.breadcrumbs-title,
+.catalog-filter-titel,
+.prev-link,
+.next-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #000000;
+}
+
+.breadcrumbs-list a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-filter-subtitle,
+.product-card-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-list {
+  background-color: #FFFFFF;
+}
+
+.product-card-title {
+  line-height: 20px;
+}
+
+.product-card-price {
+  line-height: 21px;
+}
+
+.control-input {
+  font-size: 16px;
+  line-height: 19;
+}
+
+.button-show-more {
+  font-size: 16px;
+}
+
+.promo-slider-description .slider-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.more-info-link {
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.properties tr:first-of-type {
+  font-family: "Rudik", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.properties tr:last-of-type {
+  font-size: 16px;
+}
+
+.category-image {
+  background-color: #FFE17F;
+}
+
+.catalog-category-link {
+  font-size: inherit;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.advantages {
+  background-color: #F0F0F0;
+}
+.advantages-item-current {
+background-color: #000000;
+}
+
+.advantages-item-current a {
+  color: #FFE17F;
+}
+
+.advantages-link {
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.advantages-description-subtitle {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.rare-commodity {
+  background-color: #F0F0F0;
+}
+
+.rare-commodity a {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.trasnport-companies-item,
+.contacts h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.trasnsport-companies-item {
+  line-height: 20px;
+}
+
+.contacts-adress {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-phone {
+  font-style: normal;
+}
+.contacts-adress .contacts-phone {
+  text-decoration: none;
+  color: #444444;
+}
+
+.subscription {
+  background-color: #F0F0F0;
+}
+
+.subscription label {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.pagination-list {
+  background-color: #EBEBEB;
+}
+
+.pagination-list li:nth-of-type(n+2):nth-of-type(-n+6) {
+  opacity: 0.3;
+}
+
+.page-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.page-footer-adress .contacts-adress {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.footer-navigation-item a {
+  line-height: 21px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-social-list {
+  background: #FFFFFF;
+  opacity: 0.3;
+}
+
+.page-footer-phone .contacts-phone {
+ color: #FFFFFF;
+}
+
+
+
