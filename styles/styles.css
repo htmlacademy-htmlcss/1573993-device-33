@@ -75,25 +75,7 @@ body {
 }
 
 .button,
-.slider-title,
-.more-info-link,
-.catalog-category-link,
-.advantages-link,
-.advantages-description-list h3,
-.rar-commodity-link span,
-.about-us-title,
-.contacts-title,
-.subscrition label,
-.footer-navigation-item {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  color: #000000;
-}
-
-.breadcrumbs-title,
-.catalog-filter-titel,
-.prev-link,
-.next-link {
+.title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: #000000;
@@ -125,7 +107,7 @@ body {
 
 .control-input {
   font-size: 16px;
-  line-height: 19;
+  line-height: 19px;
 }
 
 .button-show-more {
