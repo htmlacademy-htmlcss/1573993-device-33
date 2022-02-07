@@ -1,0 +1,392 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: "normal";
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: "normal";
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.page-header {
+  width: 1160px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.navigation {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-search-form {
+  width: 517px;
+}
+
+.navigation-user {
+  width: 450px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.exit {
+  opacity: 0.3;
+}
+
+.search-button {
+  font-size: 16px;
+}
+
+.navigation-link {
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-user {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.navigation-page {
+  line-height: 21px;
+}
+
+.main-inner {
+  background-color: #F0F0F0;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.button,
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #000000;
+}
+
+.breadcrumbs {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.breadcrumbs-list a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
+}
+
+.catalog-filter-subtitle,
+.product-card-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-rigth-column {
+  width: 840px;
+}
+
+.product-card-list {
+  background-color: #FFFFFF;
+}
+
+.product-card-title {
+  line-height: 20px;
+}
+
+.product-card-price {
+  line-height: 21px;
+}
+
+.control-input {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button-show-more {
+  font-size: 16px;
+}
+
+.promo-slider-list > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-slider-image {
+  width: 560px;
+}
+
+.promo-slider-description {
+  width: 560px;
+}
+
+.promo-slider-description .slider-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.more-info-link {
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.properties tr:first-of-type {
+  font-family: "Rudik", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.properties tr:last-of-type {
+  font-size: 16px;
+}
+
+.catalog-categories-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-category-item {
+  width: 160px;
+}
+
+.category-image {
+  background-color: #FFE17F;
+}
+
+.catalog-category-link {
+  font-size: inherit;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.advantages {
+  background-color: #F0F0F0;
+}
+
+.advantages-container {
+  display: flex;
+}
+
+.advantages-list {
+  width: 280px;
+}
+
+.advantages-description-list {
+  flex-grow: 1;
+}
+
+.advantages-item-current {
+background-color: #000000;
+}
+
+.advantages-item-current a {
+  color: #FFE17F;
+}
+
+.advantages-link {
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.advantages-description-subtitle {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.rare-commodity {
+  width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F0F0F0;
+}
+
+.rare-commodity a {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us,
+.contacts {
+  width: 530px;
+}
+
+.trasnport-companies-item,
+.contacts h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.trasnsport-companies-item {
+  line-height: 20px;
+}
+
+.contacts-adress {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-phone {
+  font-style: normal;
+}
+.contacts-adress .contacts-phone {
+  text-decoration: none;
+  color: #444444;
+}
+
+.subscription {
+  background-color: #F0F0F0;
+}
+
+.subscription-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription label {
+  width: 350px;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.subscription-container p {
+  width: 560px;
+}
+
+.subscription-form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  background-color: #EBEBEB;
+}
+
+.pagination-list li:nth-of-type(n+2):nth-of-type(-n+6) {
+  opacity: 0.3;
+}
+
+.page-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.page-footer-container {
+  display: flex;
+}
+
+.page-footer-adress {
+  width: 240px;
+}
+
+.page-footer-adress .contacts-adress {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-navigation-item a {
+  line-height: 21px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-social-list {
+  background: #FFFFFF;
+  opacity: 0.3;
+}
+
+.page-footer-phone {
+  width: 180px;
+}
+
+.page-footer-phone .contacts-phone {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+
+
