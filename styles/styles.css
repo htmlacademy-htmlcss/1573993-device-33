@@ -30,7 +30,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -39,24 +47,44 @@ body {
 }
 
 .page-header {
+  width: 1160px;
+  margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: #000000;
   background-color: #FFE17F;
 }
 
-.exit {
-  opacity: 0.3;
+.navigation {
+  width: 1040px;
+  margin: 0 auto;
 }
 
-.main-inner {
-  background-color: #F0F0F0;
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-search-form {
+  width: 517px;
+}
+
+.navigation-user {
+  width: 450px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.exit {
+  opacity: 0.3;
 }
 
 .search-button {
   font-size: 16px;
 }
-
 
 .navigation-link {
   text-align: center;
@@ -74,6 +102,19 @@ body {
   line-height: 21px;
 }
 
+.main-inner {
+  background-color: #F0F0F0;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .button,
 .title {
   font-family: "Raleway", sans-serif;
@@ -81,9 +122,22 @@ body {
   color: #000000;
 }
 
+.breadcrumbs {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+}
+
 .breadcrumbs-list a {
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
 }
 
 .catalog-filter-subtitle,
@@ -93,7 +147,11 @@ body {
   color: #000000;
 }
 
-.catalog-list {
+.catalog-rigth-column {
+  width: 840px;
+}
+
+.product-card-list {
   background-color: #FFFFFF;
 }
 
@@ -112,6 +170,19 @@ body {
 
 .button-show-more {
   font-size: 16px;
+}
+
+.promo-slider-list > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-slider-image {
+  width: 560px;
+}
+
+.promo-slider-description {
+  width: 560px;
 }
 
 .promo-slider-description .slider-title {
@@ -135,6 +206,15 @@ body {
   font-size: 16px;
 }
 
+.catalog-categories-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-category-item {
+  width: 160px;
+}
+
 .category-image {
   background-color: #FFE17F;
 }
@@ -148,6 +228,19 @@ body {
 .advantages {
   background-color: #F0F0F0;
 }
+
+.advantages-container {
+  display: flex;
+}
+
+.advantages-list {
+  width: 280px;
+}
+
+.advantages-description-list {
+  flex-grow: 1;
+}
+
 .advantages-item-current {
 background-color: #000000;
 }
@@ -167,6 +260,9 @@ background-color: #000000;
 }
 
 .rare-commodity {
+  width: 1160px;
+  margin: 0 auto;
+  text-align: center;
   background-color: #F0F0F0;
 }
 
@@ -176,6 +272,16 @@ background-color: #000000;
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us,
+.contacts {
+  width: 530px;
 }
 
 .trasnport-companies-item,
@@ -209,9 +315,25 @@ background-color: #000000;
   background-color: #F0F0F0;
 }
 
+.subscription-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .subscription label {
+  width: 350px;
   font-size: 50px;
   line-height: 50px;
+  color: #000000;
+}
+
+.subscription-container p {
+  width: 560px;
+}
+
+.subscription-form-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .pagination-list {
@@ -227,10 +349,23 @@ background-color: #000000;
   background-color: #444444;
 }
 
+.page-footer-container {
+  display: flex;
+}
+
+.page-footer-adress {
+  width: 240px;
+}
+
 .page-footer-adress .contacts-adress {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  text-align: center;
 }
 
 .footer-navigation-item a {
@@ -244,8 +379,13 @@ background-color: #000000;
   opacity: 0.3;
 }
 
+.page-footer-phone {
+  width: 180px;
+}
+
 .page-footer-phone .contacts-phone {
- color: #FFFFFF;
+  font-size: 16px;
+  color: #FFFFFF;
 }
 
 
