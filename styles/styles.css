@@ -228,6 +228,7 @@ body {
 
 .show-button {
   width: 220px;
+  padding: 10px 5px;
 }
 
 .catalog-rigth-column {
@@ -368,14 +369,17 @@ body {
 }
 
 .category-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 160px;
   margin-bottom: 32px;
   background-color: #FFE17F;
 }
 
-.category-image {
-  margin: auto;
+.monopod-image {
+  align-self: flex-end;
 }
 
 .catalog-category-link {
@@ -509,7 +513,6 @@ background-color: #000000;
 }
 
 .contacts-phone {
-  padding: 7px 0;
   font-style: normal;
 }
 .contacts-address .contacts-phone {
@@ -545,6 +548,7 @@ background-color: #000000;
 
 .subscription-container p {
   width: 560px;
+  margin: 0;
 }
 
 .subscription-form-container {
@@ -563,6 +567,7 @@ background-color: #000000;
 
 .subscribe-button {
   width: 253px;
+  padding: 18px 39px;
 }
 
 .pagination-container {
@@ -589,15 +594,11 @@ background-color: #000000;
 }
 
 .pagination-item .pagination-link {
-  display: block;
-  width: 40px;
-  height: 40px;
+  margin: 0 15px;
 }
 
 .pagination-item-ellipsis {
-  display: block;
-  width: 40px;
-  height: 40px;
+  margin: 0 15px;
 }
 
 .pagination-list {
@@ -647,7 +648,6 @@ background-color: #000000;
 
 .footer-navigation-item a {
   display: block;
-  padding: 7px;
   line-height: 21px;
   text-decoration: none;
   color: #FFFFFF;
@@ -665,6 +665,9 @@ background-color: #000000;
 }
 
 .footer-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   background: #FFFFFF;
@@ -689,7 +692,7 @@ background-color: #000000;
 
 .footer-htmlacademy-link {
   display: block;
-  margin-left: auto;
+  text-align: right;
 }
 
 
