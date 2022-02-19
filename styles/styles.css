@@ -140,6 +140,7 @@ body {
 
 .top-links {
   display: flex;
+  line-height: 21px;
 }
 
 .navigation-page {
@@ -182,6 +183,7 @@ body {
   padding-top: 35px;
   padding-bottom: 35px;
   font-size: 16px;
+  line-height: 19px;
   background-color: #FFFFFF;
 }
 
@@ -193,6 +195,8 @@ body {
 .breadcrumbs-title {
   margin: 0;
   margin-bottom: 16px;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .breadcrumbs-list {
@@ -217,11 +221,23 @@ body {
 
 .catalog-filter {
   width: 260px;
+  padding-top: 25px;
+}
+
+.catalog-filter h2 {
+  margin-bottom: 60px;
+}
+
+.catalog-filter-title {
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .catalog-filter-subtitle,
 .product-card-title {
   font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
   font-weight: 700;
   color: #000000;
 }
@@ -229,6 +245,8 @@ body {
 .show-button {
   width: 220px;
   padding: 10px 5px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .catalog-rigth-column {
@@ -265,7 +283,28 @@ body {
   background-color: #FFFFFF;
 }
 
+.product-card-list {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 44px 40px;
+  margin-bottom: 44px;
+}
+
+.product-card-image {
+  display: block;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.product-card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-card-title {
+  width: 226px;
+  margin: 0;
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -273,7 +312,7 @@ body {
   line-height: 21px;
 }
 
-.control-input {
+.control {
   font-size: 16px;
   line-height: 19px;
 }
@@ -283,6 +322,7 @@ body {
   padding: 18px 0;
   margin-bottom: 44px;
   font-size: 16px;
+  line-height: 18px;
 }
 
 .promo-constructor {
@@ -383,13 +423,13 @@ body {
 }
 
 .catalog-category-link {
-  font-size: inherit;
   line-height: 24px;
   text-decoration: none;
 }
 
 .catalog-category-link h3 {
   margin: 0;
+  font-size: 18px;
 }
 
 .advantages {
@@ -406,7 +446,9 @@ body {
   flex-direction: column;
   margin-right: 116px;
   padding: 65px 0;
+  padding-right: 120px;
   width: 280px;
+  text-align: center;
 }
 
 .advantages-item:not(:last-child) {
@@ -470,6 +512,7 @@ background-color: #000000;
 .contacts-container h2 {
   margin: 42px 0;
   font-size: 50px;
+  line-height: 50px;
 }
 
 .contacts-container p {
@@ -490,16 +533,18 @@ background-color: #000000;
 .trasnport-companies-item,
 .contacts h3 {
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
   font-weight: 700;
+  color: #000000;
 }
 
 .contacts h3 {
   margin: 0;
   margin-bottom: 15px;
+  font-size: 24px;
 }
 
 .trasnsport-companies-item {
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -514,6 +559,7 @@ background-color: #000000;
 
 .contacts-phone {
   font-style: normal;
+  line-height: 20px;
 }
 .contacts-address .contacts-phone {
   text-decoration: none;
@@ -570,6 +616,10 @@ background-color: #000000;
   padding: 18px 39px;
 }
 
+.subscription-free {
+  align-self: center;
+}
+
 .pagination-container {
   display: flex;
   justify-content: space-between;
@@ -591,6 +641,7 @@ background-color: #000000;
 .next-link {
   display: block;
   padding: 25px;
+  line-height: 21px;
 }
 
 .pagination-item .pagination-link {
@@ -621,12 +672,13 @@ background-color: #000000;
 }
 
 .page-footer-logo {
+  display: block;
   margin-bottom: 35px;
 }
 
 .page-footer-address .contacts-address {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 20px;
   color: #FFFFFF;
 }
 
