@@ -312,6 +312,8 @@ body {
 .catalog-filter-title {
   font-size: 16px;
   line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .catalog-filter-subtitle,
@@ -354,13 +356,45 @@ body {
   width: 60px;
 }
 
-.catalog-sort-item {
+.catalog-sort-item,
+.catalog-sort-item-current {
+  position: relative;
   width: 30px;
   height: 30px;
+  border: 2px solid transparent;
+  border-radius: 0%;
 }
 
-.catalog-sort-item svg {
-  fill: #000;
+.catalog-sort-item-current {
+  border: 1px solid #000000;
+}
+
+.catalog-sort-item:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.sorting-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 28px;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.catalog-sort-descending .sorting-image {
+  transform: rotate(180deg);
+}
+
+.sorting-image:hover,
+.catalog-sort-item-current:hover {
+  opacity: 0.5;
+}
+
+.sorting-image:active,
+.catalog-sort-item-current:active {
+  opacity: 1;
 }
 
 .product-card-container {
@@ -957,35 +991,68 @@ body {
   background-color: #EBEBEB;
 }
 
-.pagination-link {
-  color: #444444;
-  text-decoration: none;
-}
-
 .pagination-list {
   display: flex;
   width: 200px;
 }
 
+.pagination-item {
+  min-height: 40px;
+  min-width: 40px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.pagination-link,
+.pagination-item-ellipsis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  color: #444444;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.pagination-link:hover:not(.prev-link):not(.next-link) {
+  opacity: 1;
+}
+
+.pagination-link:active:not(.prev-link):not(.next-link) {
+  opacity: 0.1;
+}
+
+.pagination-item:focus-within:not(.prev-link):not(.next-link) {
+  border: 2px solid #AF4FFF;
+}
+
 .prev-link,
 .next-link {
   display: block;
+  min-height: 71px;
   padding: 25px;
+  box-sizing: border-box;
   line-height: 21px;
+  color: #000000;
+  border: 2px solid transparent;
+  opacity: 1;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
-.pagination-item .pagination-link {
-  margin: 0 15px;
+.prev-link:hover,
+.next-link:hover {
+  background: #DCDCDC;
 }
 
-.pagination-item-ellipsis {
-  margin: 0 15px;
-}
-
-.pagination-list {
+.prev-link:active,
+.next-link:active {
   opacity: 0.3;
+}
+
+.prev-link:focus,
+.next-link:focus {
+  border: 2px solid #AF4FFF;
 }
 
 .page-footer {
