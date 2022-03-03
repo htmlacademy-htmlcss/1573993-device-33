@@ -47,7 +47,7 @@
         <div class="navigation-container top-links">
           <a class="navigation-link navigation-catalog-link" href="catalog.html">
             Каталог товаров
-            <svg class="catalog-closed" width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)">
+            <svg class="catalog-closed" aria-hidden="true" focusable="false" width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)">
               <path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(17 17.79)" d="M0 0h16v16H0z"/></clipPath></defs>
             </svg>
           </a>
@@ -74,13 +74,19 @@
           <ul class="promo-slider-list list">
             <li class="promo-slider-item-current quadracopter-slider-item">
               <div class="promo-slider-image">
-                <button type="button" class="button swiper-arrow-prev">
-                  <span class="visually-hidden">Стрелка в лево</span>
-                </button>
                 <a class="promo-slider-link" href="#">
                   <img class="image-slider" src="images/index-images/slider/quadrocopters.png" width="560" height="560" alt="Квадрокоптер">
                 </a>
+                <button type="button" class="button swiper-arrow-prev">
+                  <svg width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000"/>
+                  </svg>
+                  <span class="visually-hidden">Стрелка в лево</span>
+                </button>
                 <button type="button" class="button swiper-arrow-next">
+                  <svg width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000"/>
+                  </svg>
                   <span class="visually-hidden">Стрелка в право</span>
                 </button>
               </div>
