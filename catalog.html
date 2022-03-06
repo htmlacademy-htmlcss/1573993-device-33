@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/header-images/logo-black.svg" width="145" height="36" alt="Логотип интернет-магазин Девайс">
+          <img class="page-logo header-logo" src="images/header-images/logo-black.svg" width="145" height="36" alt="Логотип интернет-магазин Девайс">
         </a>
         <div class="navigation-container header-info">
           <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -27,7 +27,7 @@
               </a>
             </li>
             <li class="navigation-item sign-out">
-              <a class="navigation-link exit" href="#">Выйти</a>
+              <a class="navigation-link exit" href="#"><span>Выйти</span></a>
             </li>
             <li class="navigation-item compare">
               <a class="navigation-link" href="#">
@@ -37,7 +37,7 @@
                 Сравнить
               </a>
             </li>
-            <li class="navigation-item cart">
+            <li class="navigation-item cart cart-filled">
               <a class="navigation-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="m15.3 5.389-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.289l2.2 3.2H5.9l2.1-3.2Z" fill="#000"/>
@@ -50,9 +50,6 @@
         <div class="navigation-container top-links">
           <a class="navigation-link navigation-catalog-link" href="catalog.html">
             Каталог товаров
-            <svg class="catalog-closed" width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)">
-              <path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(17 17.79)" d="M0 0h16v16H0z"/></clipPath></defs>
-            </svg>
           </a>
           <ul class="navigation-list navigation-page list">
             <li class="navigation-item">
@@ -93,67 +90,102 @@
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-subtitle">Стоимость</legend>
-                <input class="control-input" type="range" min="0" max="10000" step="100" value="5000">
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px;">
+                      <button class="range-toggle toogle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toogle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от<input class="range-input" type="numbers" name="min-price" value="0">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до<input class="range-input" type="numbers" name="max-price" value="5000">
+                    </label>
+                  </div>
+                </div>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group color-group">
                 <legend class="catalog-filter-subtitle">Цвет</legend>
-                <ul class="color-list">
+                <ul class="color-list list">
                   <li class="color-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="black" checked>Черный
+                      <input class="control-input visually-hidden" type="checkbox" name="black" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="color-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="white" checked>Белый
+                      <input class="control-input visually-hidden" type="checkbox" name="white" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="color-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="blue">Синий
+                      <input class="control-input visually-hidden" type="checkbox" name="blue">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="color-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="red">Красный
+                      <input class="control-input visually-hidden" type="checkbox" name="red">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="color-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pink">Розовый
+                      <input class="control-input visually-hidden" type="checkbox" name="pink">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group bluetooth-group">
                 <legend class="catalog-filter-subtitle">Bluetooth</legend>
-                <ul class="bluetooth-list">
+                <ul class="bluetooth-list list">
                   <li class="bluetooth-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="yes" checked>Есть
+                      <input class="control-input visually-hidden" type="radio" name="bluetooth-radio" value="yes" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="bluetooth-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="no">Нет
+                      <input class="control-input visually-hidden" type="radio" name="bluetooth-radio" value="no">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <button class="button show-button" type="submit">Показать</button>
+              <button class="button show-button more-info" type="submit">Показать</button>
             </form>
           </section>
 
           <div class="catalog-rigth-column">
             <div class="sorting-container">
               <h2 class="catalog-filter-title title">Сортировка:</h2>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="expensive">Дорогие</option>
-                <option value="cheap">Дешевые</option>
-              </select>
+              <div class="select-wrapper">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="expensive">Дорогие</option>
+                  <option value="cheap">Дешевые</option>
+                </select>
+              </div>
               <div class="sorting-controls">
-                <button class="catalog-sort-item-current catalog-sort-ascending" type="button">
+                <button class="catalog-sort-item catalog-sort-item-current catalog-sort-ascending" type="button">
                   <img class="sorting-image" src="../GitHub/images/catalog-images/filters/sorting-filter.svg" width="11px" height="10px">
                   <span class="visually-hidden">Сортировка цены по возрастанию</span>
                 </button>
@@ -206,24 +238,26 @@
                   </a>
                 </li>
               </ul>
-              <button class="button button-show-more" type="button">Загрузить ещё</button>
+              <button class="button button-show-more" type="button">
+                <span class="span-button">Загрузить ещё</span>
+              </button>
               <div class="pagination-container">
                 <a class="pagination-link prev-link title" href="">Назад</a>
                 <ul class="pagination-list list">
                   <li class="pagination-item">
-                    <a class="pagination-link" href="">1</a>
+                    <a class="pagination-link pagination-link-current" href=""><span>1</span></a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">2</a>
+                    <a class="pagination-link" href="#"><span>2</span></a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">3</a>
+                    <a class="pagination-link" href="#"><span>3</span></a>
                   </li>
                   <li class="pagination-item">
-                    <span class="pagination-item-ellipsis">...</span>
+                    <span class="pagination-item pagination-item-ellipsis">...</span>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">15</a>
+                    <a class="pagination-link" href="#"><span>15</span></a>
                   </li>
                 </ul>
                 <a class="pagination-link next-link title" href="#">Вперёд</a>
@@ -236,7 +270,9 @@
 
     <footer class="page-footer">
       <div class="container">
-        <img class="page-footer-logo" src="images/footer-images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазин Девайс">
+        <a class="footer-navigation-logo">
+          <img class="page-logo footer-logo" src="images/footer-images/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазин Девайс">
+        </a>
         <div class="page-footer-container">
           <section class="page-footer-address">
             <h2 class="visually-hidden">Адрес</h2>
