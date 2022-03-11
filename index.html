@@ -15,7 +15,7 @@
         <div class="navigation-container header-info">
           <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="search-field-input" type="search" name="search-field" placeholder="Текст поиска">
-            <button class="button search-button">Найти</button>
+            <button class="button search-button"><span>Найти</span></button>
           </form>
           <ul class="navigation-list navigation-user list">
             <li class="navigation-item sign-in">
@@ -43,17 +43,62 @@
               </a>
               <div class="popover popover-cart">
                 <div class="popover-content">
-                  <h2 class="popover-title">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <ul class="cart-items-list list">
+                    <li class="cart-item">
+                      <a class="cart-item-link" href="#">
+                        <img class="cart-item-image" src="./images/catalog-images/items/catalog-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                        <h3 class="cart-item-title">Любительская селфи-палка</h3>
+                      </a>
+                      <button class="cart-item-delete"><span class="visually-hidden">Удалить из корзины</span></button>
+                    </li>
+                    <li class="cart-item">
+                      <a class="cart-item-link" href="#">
+                        <img class="cart-item-image" src="./images/catalog-images/items/catalog-2.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                        <h3 class="cart-item-title">Профессиональная селфи-палка</h3>
+                      </a>
+                      <button class="cart-item-delete">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover-footer">
+                    <div class="footer-total-wrapper">
+                      <div class="footer-total">
+                        <span class="total-amount">Товаров: 2</span>
+                        <span class="total-sum">Сумма: 2000 ₽</span>
+                      </div>
+                    </div>
+                    <button class="button popover-button" type="button">
+                      <span>Открыть корзину</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </li>
           </ul>
         </div>
         <div class="navigation-container top-links">
-          <a class="navigation-link navigation-catalog-link" href="catalog.html">
-            Каталог товаров
-          </a>
           <ul class="navigation-list navigation-page list">
+            <li class="navigatuin-item navigation-catalog-item">
+              <a class="navigation-link navigation-catalog-link" href="catalog.html">
+                Каталог товаров
+              </a>
+              <ul class="dropdown-list dropdown-list-close list">
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Виртуальная реальность</a>
+                  <a class="dropdown-link" href="catalog.html">Моноподы для селфи</a>
+                  <a class="dropdown-link" href="#">Экшн камеры</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Фитнес-браслеты</a>
+                  <a class="dropdown-link" href="#">Умные часы</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
             <li class="navigation-item">
               <a class="navigation-link " href="#">Доставка</a>
             </li>
@@ -201,7 +246,8 @@
                   <div class="category-image-wrapper">
                     <img class="category-image monopod-image" src="images/index-images/catalog-categories/monopods.svg" width="86" height="117" alt="Монопод для селфи">
                   </div>
-                  <h3 class="title">Моноподы для селфи</h3>
+                  <h3 class="title">Моноподы<br>
+                     для селфи</h3>
                 </a>
               </li>
               <li class="catalog-category-item">
@@ -302,14 +348,14 @@
           <h2 class="contacts-title title">О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-          <ul class="transport-companies-list">
-            <li class="trasnport-companies-item">
+          <ul class="transport-companies-list list">
+            <li class="transport-companies-item">
               Меловые линии
             </li>
-            <li class="trasnport-companies-item">
+            <li class="transport-companies-item">
               СДИК
             </li>
-            <li class="trasnport-companies-item">
+            <li class="transport-companies-item">
               ТоксБерри
             </li>
           </ul>
@@ -376,7 +422,7 @@
                 <a class="footer-navigation-link" href="#">Гарантия</a>
               </li>
               <li class="footer-navigation-item title">
-                <a class="footer-navigation-link" href="#">Котакты</a>
+                <a class="footer-navigation-link" href="#">Контакты</a>
               </li>
             </ul>
             <ul class="footer-social-list list">
@@ -410,5 +456,72 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-content-title">Доставка под заказ</h2>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="field-group delivery-login-form">
+              <span class="delivery-form-title">
+                <label class="delivery-form-label" for="login-form-field">Ваше имя:</label>
+              </span>
+              </label>
+              <input class="delivery-form-field" type="text" name="delivery-login" id="login-form-field" placeholder="Введите имя">
+              <span class="delivery-form-subtitle">Добавтье имя</span>
+            </div>
+
+            <div class="field-group delivery-email-form">
+              <span class="delivery-form-title">
+                <label class="delivery-form-label" for="email-form-field">Ваше e-mail:</label>
+              </span>
+              </label>
+              <input class="delivery-form-field" type="email" name="delivery-email" id="email-form-field" placeholder="Ваше e-mail">
+              <span class="delivery-form-subtitle">Забавный у вас адрес</span>
+            </div>
+
+            <div class="field-group delivery-order-form">
+              <span class="delivery-form-title">
+                <label class="delivery-form-label" for="text-form-field">Что нужно привезти:</label>
+              </span>
+              </label>
+              <input class="delivery-form-field" type="text" name="delivery-order" id="text-form-field" placeholder="В свободной форме">
+            </div>
+
+            <div class="field-group delivery-amount-form">
+              <span class="delivery-form-title">
+                <label class="delivery-form-label" for="amount-form-field">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toogle" labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="2" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                    к провозу багажа.
+                  </span>
+                </span>
+              </span>
+              <div class="delivery-amount-wrapper">
+                <button class="delivery-amount-button delivery-amount-minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+                <input class="delivery-form-field" type="number" name="delivery-amount" min="1" step="1" id="amount-form-field" value="1">
+                <button class="delivery-amount-button delivery-amount-plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
+              </div>
+            </div>
+
+            <button class="more-info delivery-form-button title" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
