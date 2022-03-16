@@ -315,7 +315,7 @@ body {
 
 .cart-item-delete {
   width: 10px;
-  height: 10px; 
+  height: 10px;
   margin-left: auto;
   padding: 0;
   border: none;
@@ -412,13 +412,13 @@ body {
 }
 
 .navigation-catalog-item {
-  z-index: 2;
   position: relative;
   margin-right: auto;
 }
 
 .top-links .navigation-catalog-link {
   position: relative;
+  z-index: 3;
   display: inline-block;
   padding-right: 66px;
 }
@@ -1172,7 +1172,7 @@ body {
 .subscribe-input:focus {
   background-color: #DCDCDC;
   outline: 2px solid #AF4FFF;
-  
+
 }
 
 .subscribe-input:invalid {
@@ -1703,6 +1703,7 @@ body {
 
 .select-wrapper {
   width: 159px;
+
 }
 
 .select-control {
@@ -1715,6 +1716,7 @@ body {
   background-position: right 11px center;
   border: none;
   appearance: none;
+  -moz-appearance: textfield;
 }
 
 .select-control:hover {
@@ -1945,7 +1947,7 @@ body {
   box-sizing: border-box;
   line-height: 21px;
   color: #000000;
-  
+
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1975,7 +1977,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   width: 100%;
   height: 100%;
@@ -2235,8 +2237,13 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.delivery-amount-wrapper input::-webkit-outer-spin-button,
+.delivery-amount-wrapper input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
+.delivery-amount-wrapper input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 
