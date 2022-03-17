@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Rubik";
-  font-style: "normal";
+  font-style: normal;
   font-weight: 800;
   src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Raleway";
-  font-style: "normal";
+  font-style: normal;
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
@@ -450,6 +450,7 @@ body {
   position: absolute;
   top: 32px;
   left: -60px;
+  z-index: 1;
   display: none;
   width: 1160px;
   min-height: 134px;
@@ -514,6 +515,7 @@ body {
 
 .promo-constructor {
   position: relative;
+  z-index: -1;
   margin-top: -37px;
   margin-bottom: 70px;
 }
@@ -523,7 +525,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
   width: 1160px;
   height: 150px;
   background-color: #FFE17F;
@@ -1772,8 +1773,7 @@ body {
   transform: rotate(180deg);
 }
 
-.sorting-image:hover,
-.catalog-sort-item-current:hover {
+.sorting-image:hover {
   opacity: 0.5;
 }
 

@@ -153,10 +153,10 @@
                   </div>
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
-                      от<input class="range-input" type="numbers" name="min-price" value="0">
+                      от<input class="range-input" type="number" name="min-price" value="0">
                     </label>
                     <label class="catalog-filter-label">
-                      до<input class="range-input" type="numbers" name="max-price" value="5000">
+                      до<input class="range-input" type="number" name="max-price" value="5000">
                     </label>
                   </div>
                 </div>
@@ -236,11 +236,11 @@
               </div>
               <div class="sorting-controls">
                 <a class="catalog-sort-item catalog-sort-item-current catalog-sort-ascending" href="#">
-                  <img class="sorting-image" src="./images/catalog-images/filters/sorting-filter.svg" width="11px" height="10px">
+                  <img class="sorting-image" src="./images/catalog-images/filters/sorting-filter.svg" width="11" height="10" alt="Стрелка цены вверх">
                   <span class="visually-hidden">Сортировка цены по возрастанию</span>
                 </a>
                 <a class="catalog-sort-item catalog-sort-descending" href="#">
-                  <img class="sorting-image" src="./images/catalog-images/filters/sorting-filter.svg" width="11px" height="10px">
+                  <img class="sorting-image" src="./images/catalog-images/filters/sorting-filter.svg" width="11" height="10" alt="Стрелка цены вниз">
                   <span class="visually-hidden">Сортировка цены по убыванию</span>
                 </a>
               </div>
@@ -252,7 +252,7 @@
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/catalog-images/items/catalog-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                     <div class="product-card-footer">
-                      <h3 class="product-card-title">Любительская<br> 
+                      <h3 class="product-card-title">Любительская<br>
                         селфи-палка</h3>
                       <span class="product-card-price">500 ₽</span>
                     </div>
@@ -402,7 +402,6 @@
               <span class="delivery-form-title">
                 <label class="delivery-form-label" for="login-form-field">Ваше имя:</label>
               </span>
-              </label>
               <input class="delivery-form-field" type="text" name="delivery-login" id="login-form-field" placeholder="Введите имя">
               <span class="delivery-form-subtitle">Добавтье имя</span>
             </div>
@@ -411,7 +410,6 @@
               <span class="delivery-form-title">
                 <label class="delivery-form-label" for="email-form-field">Ваше e-mail:</label>
               </span>
-              </label>
               <input class="delivery-form-field" type="email" name="delivery-email" id="email-form-field" placeholder="Ваше e-mail">
               <span class="delivery-form-subtitle">Забавный у вас адрес</span>
             </div>
@@ -420,7 +418,6 @@
               <span class="delivery-form-title">
                 <label class="delivery-form-label" for="text-form-field">Что нужно привезти:</label>
               </span>
-              </label>
               <input class="delivery-form-field" type="text" name="delivery-order" id="text-form-field" placeholder="В свободной форме">
             </div>
 
@@ -428,13 +425,13 @@
               <span class="delivery-form-title">
                 <label class="delivery-form-label" for="amount-form-field">Количество:</label>
                 <span class="tooltip">
-                  <button class="tooltip-toogle" labelledby="tooltip-label">
+                  <button class="tooltip-toogle" aria-labelledby="tooltip-label">
                     <svg class="tooltip-icon" width="2" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" fill="#000"/>
                     </svg>
                   </button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">
-                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
                     к провозу багажа.
                   </span>
                 </span>
